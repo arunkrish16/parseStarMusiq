@@ -263,7 +263,7 @@ def main():
                     print(url)
                 else:
                     print("Downloadable", song[1] + url)
-                    # downloadAndExtract(url)
+                    downloadAndExtract(url)
 
     def getSongBulk(baseURL, navURL):
         soup = browsePage(baseURL, navURL)
@@ -278,7 +278,7 @@ def main():
                         print(url)
                     else:
                         print("Downloadable", song[1] + url)
-                        # downloadAndExtract(url)
+                        downloadAndExtract(url)
 
     keyInput = input("Enter Selection:\n\t1 for Top 25\n\t2 for Latest\n\t3 for Composer List\n\t4 for Movie List\n: ")
 
